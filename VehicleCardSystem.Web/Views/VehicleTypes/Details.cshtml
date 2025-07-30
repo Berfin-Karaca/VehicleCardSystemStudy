@@ -1,0 +1,45 @@
+﻿@model VehicleCardSystem.Core.Models.VehicleType
+
+@{
+    ViewData["Title"] = "Vehicle Type Details";
+}
+
+<div>
+    <h2 id="title" class="mb-0">@ViewData["Title"]</h2>
+    <hr />
+    <dl class="row">
+       
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Brand):
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ModelName):
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ModelName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CapacityKg):
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CapacityKg)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CapacityM3):
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CapacityM3)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.VehicletypeId" class="btn btn-warning">
+        <i class="fas fa-edit"></i> Update
+    </a>
+    <a asp-action="Index" class="btn btn-secondary ms-2">
+        <i class="fas fa-arrow-alt-circle-left"></i> Cancel
+    </a>
+</div>

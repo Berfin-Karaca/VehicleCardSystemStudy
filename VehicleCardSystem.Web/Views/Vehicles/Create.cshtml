@@ -1,0 +1,68 @@
+﻿@model VehicleCardSystem.Core.Models.Vehicle
+
+@{
+    ViewData["Title"] = "Create Vehicle";
+}
+
+<h2 id="title" class="mb-0">@ViewData["Title"]</h2>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="row mb-3">
+                <label asp-for="Plate" class="col-sm-3 col-form-label fw-bold">Plate:</label>
+                <div class="col-sm-9">
+                    <input asp-for="Plate" class="form-control" />
+                    <span asp-validation-for="Plate" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label asp-for="VehicletypeId" class="col-sm-3 col-form-label fw-bold">Vehicle Type:</label>
+                <div class="col-sm-9">
+                    <select asp-for="VehicletypeId" class="form-control" asp-items="ViewBag.VehicleTypeId">
+                        <option value="">-- Select Vehicle Type --</option>
+                    </select>
+                    <span asp-validation-for="VehicletypeId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label asp-for="ModelYear" class="col-sm-3 col-form-label fw-bold">Model Year:</label>
+                <div class="col-sm-9">
+                    <input asp-for="ModelYear" class="form-control" />
+                    <span asp-validation-for="ModelYear" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label asp-for="Color" class="col-sm-3 col-form-label fw-bold">Color:</label>
+                <div class="col-sm-9">
+                    <input asp-for="Color" class="form-control" />
+                    <span asp-validation-for="Color" class="text-danger"></span>
+                </div>
+            </div>
+           
+            <br />
+            <div class="row">
+                <div class="col-sm-9 offset-sm-3">
+                    <div class="form-group">
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Save
+                        </button>
+
+                        <a asp-action="Index" class="btn btn-secondary ms-2">
+                            <i class="fas fa-arrow-alt-circle-left"></i> Cancel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

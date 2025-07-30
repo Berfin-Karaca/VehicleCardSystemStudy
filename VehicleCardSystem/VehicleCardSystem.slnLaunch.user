@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "..\\VehicleCardSystem.Services\\VehicleCardSystem.Services.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\VehicleCardSystem.Web\\VehicleCardSystem.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
