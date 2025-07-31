@@ -15,7 +15,8 @@ Visual Studio 2022
 
 Katmanlar
 
-Proje, 4 ana katmana ayrýlmýþtýr:
+Proje, 5 ana katmana ayrýlmýþtýr:
+VehicleCardSystem: Ana projedir. Tüm katmanlar altýna açýlmýþtýr.
 VehicleCardSystem.Core: Uygulamanýn domain modellerini (Entity'leri) içerir. (Vehicle, VehicleType)
 VehicleCardSystem.Data: DbContext ve Migration iþlemleri burada tanýmlanmdý.
 VehicleCardSystem.Service: RESTful API controller'larý, servis sýnýflarý ve IService arayüzleri burada yer alýr.
