@@ -19,6 +19,8 @@ Fluent Validation
 Visual Studio 2022
 
 
+
+
 Katmanlar
 
 Proje, 4 ana katmana ayrýlmýþtýr:
@@ -32,11 +34,15 @@ VehicleCardSystem.Service: RESTful API controller'larý, servis sýnýflarý ve ISer
 VehicleCardSystem.Web: Kullanýcý arayüzü (UI) bu katmandadýr. MVC Controller ve View’lar bulunur. API ile haberleþerek kullanýcýya görsel arayüz saðlar. 
 
 
+
+
 Modeller
 
 VehicleType: Brand, Model, Capacity (KG), Capacity (M3)
 
 Vehicle: Plate, Type, Model Year, Color
+
+
 
 
 Özellikler
@@ -62,6 +68,8 @@ Validations.
 AsNoTracking() ile performans optimizasyonu saðlandý.
 
 Vehicle ve VehicleType için UI'da form kontrolleri ve doðrulamalar yapýldý.
+
+
 
 
 Çalýþtýrma
