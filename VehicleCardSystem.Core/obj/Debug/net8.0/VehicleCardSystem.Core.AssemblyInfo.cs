@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VehicleCardSystem.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6f41cece1d86f8e86d948b5b728b2533e8144b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4c8322006daa60629dd3f04f88c3686bf05a181")]
 [assembly: System.Reflection.AssemblyProductAttribute("VehicleCardSystem.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VehicleCardSystem.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
